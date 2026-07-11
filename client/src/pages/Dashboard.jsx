@@ -323,7 +323,7 @@ function Dashboard() {
         className="mb-3 w-full rounded-xl bg-[#f0533a] py-3 font-bold transition hover:scale-105"
         onClick={() => {
           navigator.clipboard.writeText(
-            `http://127.0.0.1:5000/api/files/share/${shareFileData._id}`
+            `https://secure-file-sharing-system-7qmx.onrender.com/api/files/share/${shareFileData._id}`
           );
 
           alert("Link Copied");
@@ -337,7 +337,7 @@ function Dashboard() {
         className="mb-3 w-full rounded-xl bg-green-600 py-3 font-bold transition hover:scale-105"
         onClick={() =>
           window.open(
-            `https://wa.me/?text=http://127.0.0.1:5000/api/files/share/${shareFileData._id}`
+            `https://wa.me/?text=https://secure-file-sharing-system-7qmx.onrender.com/api/files/share/${shareFileData._id}`
           )
         }
       >
@@ -348,7 +348,7 @@ function Dashboard() {
         className="mb-3 w-full rounded-xl bg-red-600 py-3 font-bold transition hover:scale-105"
         onClick={() =>
           window.open(
-            `mailto:?subject=Secure File&body=http://127.0.0.1:5000/api/files/share/${shareFileData._id}`
+            `mailto:?subject=Secure File&body=https://secure-file-sharing-system-7qmx.onrender.com/api/files/share/${shareFileData._id}`
           )
         }
       >
