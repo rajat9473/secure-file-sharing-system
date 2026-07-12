@@ -67,7 +67,10 @@ function Dashboard() {
       setSelectedFile(null);
     } catch (err) {
       console.log(err);
-      alert("Upload Failed");
+      console.log(err.response);
+      console.log(err.response?.data);
+    
+      alert(err.response?.data?.message || err.message);
     } finally {
       setUploading(false);
     }
@@ -277,7 +280,7 @@ function Dashboard() {
         <div className="flex gap-3">
 
           <a
-            href={`http://127.0.0.1:5000/api/files/share/${file._id}`}
+            href={`${import.meta.env.VITE_API_URL}/files/share/${file._id}`}
             target="_blank"
             rel="noreferrer"
             className="rounded-xl bg-green-600 px-5 py-3 font-bold shadow transition hover:scale-105 hover:bg-green-700"

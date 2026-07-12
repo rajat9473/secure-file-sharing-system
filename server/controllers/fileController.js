@@ -24,12 +24,14 @@ const uploadFile = async (req, res) => {
       message: "File uploaded successfully",
       file,
     });
-  } catch (error) {
+} catch (error) {
+    console.log("========== UPLOAD ERROR ==========");
     console.log(error);
-
+    console.log("==================================");
+  
     res.status(500).json({
       success: false,
-      message: "Server Error",
+      message: error.message,
     });
   }
 };
