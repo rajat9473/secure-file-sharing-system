@@ -161,13 +161,15 @@ npm run dev
 
 ### Home Page
 
-<img width="100%" alt="Home" src="https://via.placeholder.com/1200x700?text=Home+Page">
+<img width="1912" height="905" alt="image" src="https://github.com/user-attachments/assets/d3d3b41d-ad15-4661-9588-d45195e1650c" />
+
 
 ---
 
 ### Dashboard
 
-<img width="100%" alt="Dashboard" src="https://via.placeholder.com/1200x700?text=Dashboard">
+<img width="1908" height="888" alt="image" src="https://github.com/user-attachments/assets/190087c3-e685-42c6-acb9-f3ac281fb885" />
+
 
 ---
 
