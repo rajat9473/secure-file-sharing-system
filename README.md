@@ -1,41 +1,54 @@
-# 🔒 Secure File Sharing System
+# 🔐 Secure File Sharing System
 
-A secure file sharing web application built using the MERN Stack. Users can securely upload, manage, search, download, delete and share files through a modern web interface.
+A modern and secure full-stack file sharing application that allows users to upload, manage, download, delete, and securely share files using unique shareable links.
+
+## 🌐 Live Demo
+
+🚀 Frontend (Vercel)
+
+https://secure-file-sharing-system-five.vercel.app/
 
 ---
 
-## 🚀 Features
+## 📌 Features
 
 - 🔐 JWT Authentication (Login & Signup)
+- 👤 User Registration & Login
 - 📂 Secure File Upload
 - 📥 File Download
-- 🗑️ Delete Files
-- 🔎 Search Uploaded Files
-- 📤 Share Files
-  - Copy Link
-  - Share via WhatsApp
-  - Share via Gmail
-- 📱 Responsive Dashboard
-- ☁️ MongoDB Storage
+- 🔗 Share Files using Public Links
+- 📋 Copy Share Link
+- 🟢 Share via WhatsApp
+- 📧 Share via Email
+- 🗑 Delete Uploaded Files
+- 🔍 Search Uploaded Files
+- 📊 Dashboard with File Statistics
+- 🎨 Modern Responsive UI
+- ☁️ Cloud Deployment
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
 ### Frontend
 - React.js
-- React Router
-- Tailwind CSS
+- React Router DOM
 - Axios
+- Tailwind CSS
 - Lucide React
 
 ### Backend
 - Node.js
 - Express.js
-- MongoDB
+- MongoDB Atlas
 - Mongoose
-- JWT
+- JWT Authentication
 - Multer
+
+### Deployment
+- Vercel (Frontend)
+- Render (Backend)
+- MongoDB Atlas (Database)
 
 ---
 
@@ -56,14 +69,15 @@ Secure-File-Sharing-System
 │   ├── models
 │   ├── routes
 │   ├── uploads
-│   └── server.js
+│   ├── server.js
+│   └── package.json
 │
 └── README.md
 ```
 
 ---
 
-## ⚙️ Installation
+## 🚀 Installation
 
 ### Clone Repository
 
@@ -71,63 +85,147 @@ Secure-File-Sharing-System
 git clone https://github.com/rajat9473/secure-file-sharing-system.git
 ```
 
-### Install Frontend
+### Move into Project
 
 ```bash
-cd client
-npm install
-npm run dev
+cd secure-file-sharing-system
 ```
 
-### Install Backend
+---
+
+## Backend Setup
 
 ```bash
 cd server
 npm install
+```
+
+Create a `.env` file
+
+```env
+PORT=5000
+MONGO_URI=YOUR_MONGODB_URI
+JWT_SECRET=YOUR_SECRET_KEY
+```
+
+Start Server
+
+```bash
 npm run dev
 ```
 
 ---
 
-## 🔑 Environment Variables
+## Frontend Setup
 
-Create a `.env` file inside the **server** folder.
+```bash
+cd client
+npm install
+```
+
+Create a `.env`
 
 ```env
-PORT=5000
-MONGO_URI=YOUR_MONGODB_CONNECTION_STRING
-JWT_SECRET=YOUR_SECRET_KEY
+VITE_API_URL=http://localhost:5000/api
+```
+
+Run Frontend
+
+```bash
+npm run dev
 ```
 
 ---
 
-## 📸 Screenshots
+## API Endpoints
 
-- Home Page
-- Login
-- Dashboard
-- File Upload
-- Share Popup
+### Authentication
 
-(Add screenshots here later.)
+| Method | Endpoint |
+|---------|----------|
+| POST | /api/auth/register |
+| POST | /api/auth/login |
+
+### Files
+
+| Method | Endpoint |
+|---------|----------|
+| POST | /api/files/upload |
+| GET | /api/files/my-files |
+| DELETE | /api/files/:id |
+| GET | /api/files/share/:id |
 
 ---
 
-## 👨‍💻 Author
+## Screenshots
 
-**Rajat Chitransh**
+### Home Page
 
-GitHub:
+<img width="100%" alt="Home" src="https://via.placeholder.com/1200x700?text=Home+Page">
+
+---
+
+### Dashboard
+
+<img width="100%" alt="Dashboard" src="https://via.placeholder.com/1200x700?text=Dashboard">
+
+---
+
+## Security Features
+
+- JWT Authentication
+- Protected Routes
+- Secure File Upload
+- User-wise File Management
+- Shareable Download Links
+- MongoDB Atlas Cloud Database
+- Password Encryption using bcrypt
+- CORS Protection
+
+---
+
+## Future Enhancements
+
+- Password Protected Share Links
+- File Expiry Links
+- Email Verification
+- Forgot Password
+- Download Analytics
+- Cloud Storage (AWS S3 / Cloudinary)
+- Drag & Drop Upload
+- Upload Progress Bar
+- File Preview
+
+---
+
+## Author
+
+### Rajat Chitransh
+
+GitHub
+
 https://github.com/rajat9473
 
-LinkedIn:
-https://www.linkedin.com/in/rajat-chitransh95/
+LinkedIn
 
-Email:
-rajatchitransh02@gmail.com
+https://www.linkedin.com/in/rajat-chitransh95/
 
 ---
 
-## ⭐ Support
+## Repository
 
-If you like this project, consider giving it a ⭐ on GitHub.
+https://github.com/rajat9473/secure-file-sharing-system
+
+---
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## ⭐ If you like this project
+
+Please consider giving it a **Star ⭐** on GitHub.
+
+It helps and motivates me to build more open-source projects.
